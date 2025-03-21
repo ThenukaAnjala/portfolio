@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Responsive Meta Tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Details | Photography</title>
+
+  <!-- External CSS & Icons -->
+  <link 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- GSAP for Animations -->
+  <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" 
+    defer
+  ></script>
+
+  <!-- Your Custom CSS -->
+  <link rel="stylesheet" href="assets/css/portfolio.css">
+
+  <!-- Your Custom JS -->
+  <script src="assets/js/portfolio.js" defer></script>
+</head>
+<body class="light-mode">
+  <!-- Skip Link (Accessibility) -->
+  <a href="#main-content" class="skip-link" aria-label="Skip to main content">
+    Skip to main content
+  </a>
+
+  <!-- Minimal Navbar -->
+  <nav class="navbar" aria-label="Project Navigation">
+    <div class="container">
+      <!-- Logo or Title -->
+      <a href="index.html" class="logo" aria-label="Back to Home">
+        <img 
+          src="assets/images/project/01/001.png" 
+          alt="Company Logo" 
+          class="company-logo"
+        >
+      </a>
+
+      <!-- Dark/Light Mode Toggle -->
+      <div class="theme-switch-wrapper">
+        <input 
+          type="checkbox" 
+          id="theme-switch" 
+          class="theme-switch"
+          aria-label="Dark/Light mode toggle"
+        >
+        <label for="theme-switch" class="switch-label">
+          <span class="toggle-ball"></span>
+        </label>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section for Photography Project -->
+  <header class="project-hero" id="home">
+    <!-- Hero Background Image (001.png) -->
+    <img 
+      src="assets/images/project/01/001.png" 
+      alt="Photography Hero Background" 
+      class="hero-image"
+    >
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <!-- Project Title and Subtitle -->
+      <h1>Photography</h1>
+      <!-- <p>An artistic exploration through the lens.</p> -->
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Section 1: Introduction / Overview -->
+    <section class="project-intro" aria-label="Project Overview">
+      <div class="container">
+        <!-- First Image (again 001.png) -->
+        <div class="intro-img">
+          <img 
+            src="assets/images/project/01/001.png" 
+            alt="Close-up shot highlighting the photography project"
+          >
+        </div>
+        <div class="intro-text">
+          <p>
+            This photography collection showcases the interplay of light, 
+            color, and composition across various environments. Each shot is 
+            meticulously planned to capture unique moods and narratives.<br>
+            Through extensive collaboration with models, venues, and 
+            post-processing experts, this project aims to deliver 
+            breathtaking visuals that resonate deeply with viewers.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Detailed Description -->
+    <section class="project-details-section" aria-label="Detailed Description">
+      <div class="container details-grid">
+        <div class="details-text">
+          <h2>Creative Direction</h2>
+          <p>
+            A visually stunning photography portfolio website showcasing creativity through a minimalist design, bold typography, high-quality images, and dynamic animations. Features include responsive layouts, interactive hover effects, a seamless mobile-friendly navigation menu, and professional contact links. Designed to captivate users, highlight creative works, and provide a smooth, immersive browsing experience on all devices.
+          </p>
+        </div>
+        <!-- Second Image (002.png) -->
+        <div class="details-img">
+          <img 
+            src="assets/images/project/01/002.png" 
+            alt="Example of the creative direction in the photography project"
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Additional Info -->
+    <section class="project-extra-section" aria-label="Additional Highlights">
+      <div class="container">
+        <!-- Row #1 -->
+        <div class="extra-item">
+          <!-- Third Image (003.png) -->
+          <div class="extra-img">
+            <img
+              src="assets/images/project/01/003.png" 
+              alt="Showcasing camera setup and domain expertise"
+            >
+          </div>
+          <div class="extra-text">
+            <h3>Technical Mastery</h3>
+            <p>
+              The project demonstrates technical mastery through responsive design using
+               Next.js and Tailwind CSS, ensuring optimal performance across devices.
+                It integrates dynamic animations, seamless navigation, and interactive
+                 hover effects. Optimized asset handling via next/image enhances loading
+                  speed. Modular components with reusable code maintain scalability,
+                   while advanced tools like Heroicons ensure a modern, professional UI.
+               The design prioritizes accessibility, performance, and a mobile-first
+                approach for a smooth user experience.
+            </p>
+          </div>
+        </div>
+
+        <!-- Row #2 -->
+        <div class="extra-item reverse-row">
+          <div class="extra-text">
+            <h3>Global Locations</h3>
+            <p>
+              This project can be accessed globally, enabling the photographer to showcase their portfolio to a worldwide audience. Designed with a responsive layout, it ensures seamless usability across all devices, regions, and network conditions. The website can be hosted on platforms like **Vercel** or similar global CDN-backed services, ensuring fast loading times and accessibility for users regardless of location. Social media links and contact options facilitate engagement with a global audience.
+            </p>
+          </div>
+          <!-- Fourth Image (004.png) -->
+          <div class="extra-img">
+            <img
+              src="assets/images/project/01/004.png"
+              alt="Global collaboration and location-based photography"
+            >
+          </div>
+        </div>
+
+        <!-- Row #3 -->
+        <div class="extra-item">
+          <div class="extra-img">
+            <!-- Fifth Image (005.png) -->
+            <img
+              src="assets/images/project/01/005.png"
+              alt="Post-processing session for refining images"
+            >
+          </div>
+          <div class="extra-text">
+            <h3>Post-Processing</h3>
+            <p>
+              Post-processing in this project focuses on optimizing images, animations, and user interactions for performance and aesthetics. Tools like `next/image` ensure efficient image rendering with lazy loading and responsive sizing. CSS transitions and hover effects are carefully crafted for smooth animations, enhancing the visual appeal. Regular code reviews, linting, and debugging maintain high-quality code. Deployment involves minifying assets and leveraging a Content Delivery Network (CDN) for fast global delivery. Post-launch analytics are used to refine the user experience further.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation / Return Section -->
+    <section class="project-nav-section" aria-label="Navigation Links">
+      <div class="container project-nav">
+        <a href="index.html" class="btn-secondary" aria-label="Go back to homepage">
+          <i class="fas fa-arrow-left"></i> Back to Home
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" aria-label="Footer">
+    <div class="container">
+      <p>&copy; 2025 25CodeLab. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

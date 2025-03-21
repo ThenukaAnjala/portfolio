@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Responsive Meta Tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Details | Guardian</title>
+
+  <!-- External CSS & Icons -->
+  <link 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- GSAP for Animations -->
+  <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" 
+    defer
+  ></script>
+
+  <!-- Your Custom CSS -->
+  <link rel="stylesheet" href="assets/css/portfolio.css">
+
+  <!-- Your Custom JS -->
+  <script src="assets/js/portfolio.js" defer></script>
+</head>
+<body class="light-mode">
+  <!-- Skip Link (Accessibility) -->
+  <a href="#main-content" class="skip-link" aria-label="Skip to main content">
+    Skip to main content
+  </a>
+
+  <!-- Minimal Navbar -->
+  <nav class="navbar" aria-label="Project Navigation">
+    <div class="container">
+      <!-- Logo or Title -->
+      <a href="index.html" class="logo" aria-label="Back to Home">
+        <img 
+          src="assets/images/project/02/012.png" 
+          alt="Company Logo" 
+          class="company-logo"
+        >
+      </a>
+
+      <!-- Dark/Light Mode Toggle -->
+      <div class="theme-switch-wrapper">
+        <input 
+          type="checkbox" 
+          id="theme-switch" 
+          class="theme-switch"
+          aria-label="Dark/Light mode toggle"
+        >
+        <label for="theme-switch" class="switch-label">
+          <span class="toggle-ball"></span>
+        </label>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section for Photography Project -->
+  <header class="project-hero" id="home">
+    <!-- Hero Background Image (001.png) -->
+    <img 
+      src="assets/images/project/02/012.png" 
+      alt="Photography Hero Background" 
+      class="hero-image"
+    >
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <!-- Project Title and Subtitle -->
+      <h1>Guardian</h1>
+      <!-- <p>An artistic exploration through the lens.</p> -->
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Section 1: Introduction / Overview -->
+    <section class="project-intro" aria-label="Project Overview">
+      <div class="container">
+        <!-- First Image (again 001.png) -->
+        <div class="intro-img">
+          <img 
+            src="assets/images/project/02/010.png" 
+            alt="Close-up shot highlighting the photography project"
+          >
+        </div>
+        <div class="intro-text">
+          <p>
+            The "Guardians" app is a travel safety solution designed to enhance security for solo travelers. Using GPS and gyroscope sensors, it monitors user movements and detects potential risks. It includes a mobile app for users to start and track trips, and a web-based admin panel that oversees traveler safety in real time. Features include alert pop-ups for emergencies, signal-loss zone predictions, and a color-coded priority system to highlight travelers in distress. This innovative app ensures rapid response and intervention, empowering users with a safer and more secure travel experience globally.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Detailed Description -->
+    <section class="project-details-section" aria-label="Detailed Description">
+      <div class="container details-grid">
+        <div class="details-text">
+          <h2>Creative Direction</h2>
+          <p>The creative direction for "Guardians" focuses on blending technology with safety, offering a seamless user experience for travelers and administrators. The app features a modern, intuitive interface that emphasizes accessibility and reliability. Vibrant yet calming colors inspire trust and security, while clear, bold icons guide users effortlessly through critical features. The admin panel integrates a sleek, map-centric design with real-time data visualization for easy monitoring. Motion effects subtly enhance interaction, reflecting the app's dynamic safety features. The branding combines innovation with compassion, reinforcing the mission to empower solo travelers with the confidence to explore the world safely and worry-free.</p>
+        </div>
+        <!-- Second Image (002.png) -->
+        <div class="details-img">
+          <img 
+            src="assets/images/project/02/011.png" 
+            alt="Example of the creative direction in the photography project"
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Additional Info -->
+    <section class="project-extra-section" aria-label="Additional Highlights">
+      <div class="container">
+        <!-- Row #1 -->
+        <div class="extra-item">
+          <!-- Third Image (003.png) -->
+          <div class="extra-img">
+            <img
+              src="assets/images/project/02/001.png" 
+              alt="Showcasing camera setup and domain expertise"
+            >
+          </div>
+          <div class="extra-text">
+            <h3>Technical Mastery</h3>
+            <p>
+                "Guardians" demonstrates technical mastery by integrating cutting-edge tools and frameworks to create a robust safety platform. Built using React Native for the mobile app and the MERN stack for the admin panel, it ensures a seamless user experience across devices. The app utilizes gyroscope sensors for real-time movement tracking and GPS for location monitoring, ensuring user safety during travel. Advanced technologies like Socket.IO enable instant communication, while efficient database management through MongoDB ensures secure and scalable data storage. The app's intelligent algorithms, including signal-loss predictions and priority-based alerts, showcase innovative problem-solving, enhancing travel security through precision and reliability.
+            </p>
+          </div>
+        </div>
+
+        <!-- Row #2 -->
+        <div class="extra-item reverse-row">
+          <div class="extra-text">
+            <h3>Global Locations</h3>
+            <p>"Guardians" is designed to operate seamlessly across global locations, catering to the needs of travelers worldwide. By leveraging GPS technology, the app ensures accurate location tracking, regardless of the region. It adapts to various terrains, from urban landscapes to remote hiking trails, providing safety in diverse environments. The admin panel’s real-time monitoring supports international usage, allowing administrators to oversee travelers in different time zones. Multilingual support and compatibility with global travel norms ensure that the app is accessible and user-friendly for people across cultures. With its focus on universal functionality, "Guardians" aims to redefine travel safety on a global scale.</p>
+          </div>
+          <!-- Fourth Image (004.png) -->
+          <div class="extra-img">
+            <img
+              src="assets/images/project/02/002.png"
+              alt="Global collaboration and location-based photography"
+            >
+          </div>
+        </div>
+
+        <!-- Row #3 -->
+        <div class="extra-item">
+          <div class="extra-img">
+            <!-- Fifth Image (005.png) -->
+            <img
+              src="assets/images/project/02/004.png"
+              alt="Post-processing session for refining images"
+            >
+          </div>
+          <div class="extra-text">
+            <h3>Post-Processing</h3>
+            <p>
+                Post-processing in "Guardians" focuses on refining data and user interactions to enhance safety and usability. After collecting gyroscope and GPS data, the system analyzes patterns to identify potential risks, such as immobility or unusual movements. Signal-loss data is processed to estimate the user's last known location, generating a search zone for efficient intervention. User responses to alerts are logged and prioritized in the admin panel, enabling quick decision-making. The data is securely stored and analyzed for improving future system performance. This meticulous post-processing ensures accurate insights, timely assistance, and continuous improvement of the app's safety mechanisms.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation / Return Section -->
+    <section class="project-nav-section" aria-label="Navigation Links">
+      <div class="container project-nav">
+        <a href="index.html" class="btn-secondary" aria-label="Go back to homepage">
+          <i class="fas fa-arrow-left"></i> Back to Home
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" aria-label="Footer">
+    <div class="container">
+      <p>&copy; 2025 25CodeLab. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

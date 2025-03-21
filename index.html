@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Responsive Meta Tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Main Landing Page</title>
+  
+  <!-- External CSS & Icons -->
+  <link 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    rel="stylesheet"
+  >
+  
+  <!-- GSAP for Animations -->
+  <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" 
+    defer
+  ></script>
+
+  <!-- Your Custom CSS -->
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+
+  <!-- Your Custom JS -->
+  <script src="assets/js/main.js" defer></script>
+</head>
+
+<body class="light-mode">
+  <!-- Skip Navigation for Accessibility -->
+  <a href="#main-content" class="skip-link" aria-label="Skip to main content">Skip to main content</a>
+  
+  <!-- Navigation -->
+  <nav class="navbar" aria-label="Main Navigation">
+    <div class="container">
+      <!-- Logo -->
+      <a href="#home" class="logo" aria-label="Home">
+        <img 
+          src="assets/images/24codelab.png" 
+          alt="24CodeLab Logo" 
+          class="company-logo"
+        >
+      </a>
+
+      <!-- Hamburger Menu (for mobile) -->
+      <div 
+        class="hamburger-menu" 
+        id="hamburger-menu"
+        aria-label="Toggle Navigation"
+        aria-expanded="false"
+        aria-controls="nav-links"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Dark/Light Mode Toggle -->
+      <div class="theme-switch-wrapper">
+        <input 
+          type="checkbox" 
+          id="theme-switch" 
+          class="theme-switch"
+          aria-label="Dark/Light mode toggle"
+        >
+        <label for="theme-switch" class="switch-label">
+          <span class="toggle-ball"></span>
+        </label>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Hero Section -->
+  <header class="hero-section" id="home">
+    <img 
+      src="assets/images/headB.jpg" 
+      alt="Hero Background" 
+      class="hero-image"
+    >
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Welcome to 25CodeLab - Innovating IT Solutions and Websites!</h1>
+      <p>We empower businesses with cutting-edge technology, solving challenges and building your digital future.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-secondary">Contact Us</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper (for skip link target) -->
+  <main id="main-content">
+    <!-- About Section -->
+    <section id="about" class="about-section" aria-label="About Section">
+      <div class="container about-content">
+        <!-- Image Section -->
+        <div class="about-image">
+          <img 
+            src="assets/images/about.png" 
+            alt="Portrait illustration representing Thenuka Gunasekara"
+          >
+        </div>
+        <!-- Text Section -->
+        <div class="about-text">
+          <h2>About Us - 25CodeLab</h2>
+          <p>
+            At 24CodeLab, we specialize in solving complex IT challenges and delivering cutting-edge solutions to businesses and individuals. From crafting responsive, modern websites to developing advanced brain models, deep learning, machine learning, and AI solutions, we bring innovation and expertise to every project.
+            Our mission is to simplify technology and empower businesses to thrive in a rapidly evolving digital world. With a dedicated team of IT professionals, we are committed to delivering excellence, driving results, and building long-term partnerships with our clients.
+
+          </p>
+          <h3>Why Choose 24CodeLab?</h3>
+          <p>
+            <strong>Expertise in Advanced Technologies:</strong> Our team is skilled in AI, machine learning, and deep learning to offer tailored solutions.
+            <br>
+            <br>
+            <strong>Problem-Solving Approach:</strong> We analyze, strategize, and deliver IT solutions that meet your specific needs.
+            <br>
+            <br>
+            <strong>Commitment to Excellence:</strong> Quality and client satisfaction are at the heart of everything we do.
+            <br>
+            <br>
+            <strong>Innovative Solutions:</strong> Whether it’s a website or a custom AI model, we ensure it's modern, scalable, and effective.
+            <br>
+          </p>
+          <p>
+            Let us transform your vision into reality with innovative and reliable IT solutions
+            <br>
+            <br>
+            <strong>Contact us today to begin your journey with 24CodeLab!</strong>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section (Horizontal Card Layout) -->
+    <section id="projects" class="projects-section" aria-label="Projects Section">
+      <div class="projects-container">
+        <h2>Our Projects</h2>
+        <p>Explore some of our latest work and innovations.</p>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          <!-- Project Card 1 -->
+          <div class="project-card">
+            <img 
+              src="assets/images/project/02/012.png" 
+              alt="Preview of Autotech project"
+            >
+            <div class="project-info">
+              <h3>Guardian</h3>
+              <p>
+                Travel safety app with real-time monitoring.
+              </p>
+              <a href="./guardian.html" class="read-more-btn">
+                Read More <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div class="project-card">
+            <img 
+              src="assets/images/project/01/001.png" 
+              alt="Preview of Adline project"
+            >
+            <div class="project-info">
+              <h3>Interactive Photography Portfolio</h3>
+              <p>
+                A Responsive and Engaging Showcase.
+              </p>
+              <a href="./photographyPortfolio.html" class="read-more-btn">
+                Read More <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div class="project-card">
+            <img 
+              src="assets/images/about.png" 
+              alt="Preview of Task Analytics project"
+            >
+            <div class="project-info">
+              <h3>Task Analytics</h3>
+              <p>
+                End-to-end project management for an intuitive analytics platform.
+              </p>
+              <a href="#" class="read-more-btn">
+                Read More <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project Card 4 -->
+          <div class="project-card">
+            <img 
+              src="assets/images/about.png" 
+              alt="Preview of Facilit project"
+            >
+            <div class="project-info">
+              <h3>Facilit</h3>
+              <p>
+                Enabling sustainable facility management for the public sector.
+              </p>
+              <a href="#" class="read-more-btn">
+                Read More <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project Card 5 -->
+          <div class="project-card">
+            <img 
+              src="assets/images/about.png" 
+              alt="Preview of Payment Data project"
+            >
+            <div class="project-info">
+              <h3>Payment Data</h3>
+              <p>
+                Making online transactions more secure and seamless.
+              </p>
+              <a href="#" class="read-more-btn">
+                Read More <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section" aria-label="Contact Section">
+      <div class="container">
+        <h2>Contact Us</h2>
+        
+        <div class="contact-icons">
+          <!-- Email -->
+          <a 
+            href="mailto:thenukaanjala@gmail.com" 
+            class="contact-icon email-icon"
+            aria-label="Send an email"
+          >
+            <i class="fas fa-envelope"></i>
+            <span>Email</span>
+          </a>
+          <!-- WhatsApp -->
+          <a 
+            href="https://wa.me/94706646000" 
+            target="_blank" 
+            class="contact-icon whatsapp-icon"
+            aria-label="Send a WhatsApp message"
+          >
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+          </a>
+          <!-- Call -->
+          <a 
+            href="tel:+94706646000" 
+            class="contact-icon phone-icon"
+            aria-label="Make a phone call"
+          >
+            <i class="fas fa-phone-alt"></i>
+            <span>Call</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" aria-label="Footer">
+    <div class="container">
+      <p>&copy; 2025 25CodeLab. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
+
